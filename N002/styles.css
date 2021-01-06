@@ -1,0 +1,61 @@
+/* delete the following line if no text is used
+edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #3FAF82;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.line {
+    height: 8px;
+    width: 80px;
+    background: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.3s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.first .cima {
+  transform: translate(0px,23px);
+}
+
+.first .meio {
+  transform: scale(0.5, .01);
+}
+
+.first .baixo {
+  transform: translate(0px,-23px);
+}
+
+.is-turned .cima {
+    transform: rotate(45deg);
+}
+
+.is-turned .baixo {
+  margin-top: -30px;
+  transform: rotate(135deg);
+}
